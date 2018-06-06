@@ -1,0 +1,144 @@
+@mixin respond($media, $max: null) {
+    @if $media == "print" {
+        @media only print {
+            @content;
+        }
+    } @else if $media == "small-down" {
+        @media only screen and (max-width: $medium-breakpoint - 1) {
+            @content;
+        }
+    } @else if $media == "small" {
+        @media only screen and (min-width: $small-breakpoint) and (max-width: $medium-breakpoint - 1) {
+            @content;
+        }
+    } @else if $media == "medium-down" {
+        @media only screen and (max-width: $large-breakpoint - 1) {
+            @content;
+        }
+    } @else if $media == "medium" {
+        @media only screen and (min-width: $medium-breakpoint) and (max-width: $large-breakpoint - 1) {
+            @content;
+        }
+    } @else if $media == "medium-up" {
+        @media only screen and (min-width: $medium-breakpoint) {
+            @content;
+        }
+    } @else if $media == "large-down" {
+        @media only screen and (max-width: $desktop-breakpoint - 1) {
+            @content;
+        }
+    } @else if $media == "large" {
+        @media only screen and (min-width: $large-breakpoint) and (max-width: $desktop-breakpoint - 1) {
+            @content;
+        }
+    } @else if $media == "large-up" {
+        @media only screen and (min-width: $large-breakpoint) {
+            @content;
+        }
+    } @else if $media == "desktop" {
+        @media only screen and (min-width: $desktop-breakpoint) {
+            @content;
+        }
+    } @else if $media == "xxlg" {
+        @media only screen and (min-width: $xxlg-content-breakpoint) {
+            @content;
+        }
+    } @else if type-of($media) == number and $max == null {
+        @media only screen and (min-width: $media) {
+            @content;
+        }
+    } @else if type-of($media) == number and type-of($max) == number {
+        @media only screen and (min-width: $media) and (max-width: $max - 1) {
+            @content;
+        }
+    }
+}
+
+@mixin btn (){
+  font-size: $fs-big;
+  color: $color-white;
+  background-color: $color-lilac;
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  padding: 10px 10px 10px 10px;
+}
+@mixin btn_small (){
+  font-size: $fs-midlle;
+  color: $color-white;
+  background-color: $color-lilac;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+  font-weight: 700;
+  }
+@mixin font_small (){
+  font-family: Arial;
+  color: $color-grey_strong;
+  font-size: $fs-small;
+  font-weight: $small-fw;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+@mixin font_grey_bold(){
+  font-family: Arial;
+  color:  $color-grey_strong;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: $fw-bold;
+  text-decoration: none;
+}
+@mixin font_greystrong_small() {
+  color:  $color-grey_strong;
+  font-size: $fs-small;
+  font-weight: $fw-bold;
+  line-height: 16px;
+  text-align: center;
+}
+@mixin font_grey_small() {
+  color:  $color-grey;
+  font-size: $fs-midlle;
+  font-weight: $fw-bold;
+  text-align: center;
+}
+@mixin font_greylight_small(){
+  font-size: $fs-midlle;
+  line-height: 1.5;
+  font-weight: 600;
+  color: $color-grey_strong;
+}
+@mixin font_pink (){
+  color: $color-pink;
+  font-size: 18px;
+  font-weight: $fw-bold;
+  text-align: center;
+}
+@mixin font_black-midle(){
+  font-size: 14px;
+  text-transform: uppercase;
+}
+@mixin font_black-big(){
+  font-size: $fs-big;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  color: $color-black;
+}
+@mixin font_lilac(){
+  font-size: 18px;
+  font-weight: $fw-bold;
+  color: $color-lilac;
+}
+@mixin font_lilac_source(){
+  font-size: 14px;
+  font-weight: bold;
+  color: $color-lilac;
+}
+@mixin font_white_big(){
+  color: $color-white;
+  font-size: 18px;
+}
