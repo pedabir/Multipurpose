@@ -54,91 +54,119 @@
     }
 }
 
-@mixin btn (){
-  font-size: $fs-big;
-  color: $color-white;
-  background-color: $color-lilac;
-  border-radius: 10px;
-  text-transform: uppercase;
-  cursor: pointer;
-  border: none;
-  padding: 10px 10px 10px 10px;
-}
-@mixin btn_small (){
-  font-size: $fs-midlle;
-  color: $color-white;
-  background-color: $color-lilac;
-  border-radius: 5px;
-  text-transform: uppercase;
-  cursor: pointer;
-  border: none;
-  padding: 5px;
-  font-weight: 700;
-  }
-@mixin font_small (){
-  font-family: Arial;
-  color: $color-grey_strong;
-  font-size: $fs-small;
-  font-weight: $small-fw;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-@mixin font_grey_bold(){
-  font-family: Arial;
-  color:  $color-grey_strong;
-  font-size: 20px;
-  text-transform: uppercase;
-  cursor: pointer;
-  font-weight: $fw-bold;
-  text-decoration: none;
-}
-@mixin font_greystrong_small() {
-  color:  $color-grey_strong;
-  font-size: $fs-small;
-  font-weight: $fw-bold;
-  line-height: 16px;
-  text-align: center;
-}
-@mixin font_grey_small() {
-  color:  $color-grey;
-  font-size: $fs-midlle;
-  font-weight: $fw-bold;
-  text-align: center;
-}
-@mixin font_greylight_small(){
-  font-size: $fs-midlle;
-  line-height: 1.5;
+@mixin font-top(){
+  font-family: roboto;
+  color:  #ffffff;
+  font-size: 70px;
   font-weight: 600;
-  color: $color-grey_strong;
-}
-@mixin font_pink (){
-  color: $color-pink;
-  font-size: 18px;
-  font-weight: $fw-bold;
-  text-align: center;
-}
-@mixin font_black-midle(){
-  font-size: 14px;
   text-transform: uppercase;
 }
-@mixin font_black-big(){
-  font-size: $fs-big;
+@mixin font-title(){
+  font-family: roboto;
+  color:  #ffffff;
+  font-size: 25px;
+  font-weight: 300;
   text-transform: uppercase;
-  font-weight: bold;
-  text-decoration: none;
-  color: $color-black;
 }
-@mixin font_lilac(){
-  font-size: 18px;
-  font-weight: $fw-bold;
-  color: $color-lilac;
+
+@mixin font-title_black(){
+  font-family: Roboto;
+  color:  #404040;
+  font-size: 35px;
+  font-weight: 300;
 }
-@mixin font_lilac_source(){
-  font-size: 14px;
-  font-weight: bold;
-  color: $color-lilac;
+@mixin font-titlesmall_black(){
+  font-family: Roboto;
+  color:  #404040;
+  font-size: 17px;
+  font-weight: 300;
 }
-@mixin font_white_big(){
-  color: $color-white;
-  font-size: 18px;
-}
+
+// @mixin btn (){
+//   font-size: $fs-big;
+//   color: $color-white;
+//   background-color: $color-lilac;
+//   border-radius: 10px;
+//   text-transform: uppercase;
+//   cursor: pointer;
+//   border: none;
+//   padding: 10px 10px 10px 10px;
+// }
+// @mixin btn_small (){
+//   font-size: $fs-midlle;
+//   color: $color-white;
+//   background-color: $color-lilac;
+//   border-radius: 5px;
+//   text-transform: uppercase;
+//   cursor: pointer;
+//   border: none;
+//   padding: 5px;
+//   font-weight: 700;
+//   }
+// @mixin font_small (){
+//   font-family: Arial;
+//   color: $color-grey_strong;
+//   font-size: $fs-small;
+//   font-weight: $small-fw;
+//   text-decoration: none;
+//   text-transform: uppercase;
+// }
+// @mixin font_grey_bold(){
+//   font-family: Arial;
+//   color:  $color-grey_strong;
+//   font-size: 20px;
+//   text-transform: uppercase;
+//   cursor: pointer;
+//   font-weight: $fw-bold;
+//   text-decoration: none;
+// }
+// @mixin font_greystrong_small() {
+//   color:  $color-grey_strong;
+//   font-size: $fs-small;
+//   font-weight: $fw-bold;
+//   line-height: 16px;
+//   text-align: center;
+// }
+// @mixin font_grey_small() {
+//   color:  $color-grey;
+//   font-size: $fs-midlle;
+//   font-weight: $fw-bold;
+//   text-align: center;
+// }
+// @mixin font_greylight_small(){
+//   font-size: $fs-midlle;
+//   line-height: 1.5;
+//   font-weight: 600;
+//   color: $color-grey_strong;
+// }
+// @mixin font_pink (){
+//   color: $color-pink;
+//   font-size: 18px;
+//   font-weight: $fw-bold;
+//   text-align: center;
+// }
+// @mixin font_black-midle(){
+//   font-size: 14px;
+//   text-transform: uppercase;
+// }
+// @mixin font_black-big(){
+//   font-size: $fs-big;
+//   text-transform: uppercase;
+//   font-weight: bold;
+//   text-decoration: none;
+//   color: $color-black;
+// }
+// @mixin font_lilac(){
+//   font-size: 18px;
+//   font-weight: $fw-bold;
+//   color: $color-lilac;
+// }
+// @mixin font_lilac_source(){
+//   font-size: 14px;
+//   font-weight: bold;
+//   color: $color-lilac;
+// }
+// @mixin font_white_big(){
+//   color: $color-white;
+//   font-size: 18px;
+// }

@@ -8,6 +8,7 @@ header {
   background-position: center;
   background-size: cover;
   text-align: center;
+  position: relative;
   color: white; }
   header .header-menu {
     width: 100%;
@@ -42,5 +43,51 @@ header {
           padding: 5px; }
       header .header-menu ul li:not(:last-child) {
         padding-right: 25px; }
-  header h1 {
+  header .welcome_title {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    bottom: 150px;
+    text-align: center;
     vertical-align: bottom; }
+    header .welcome_title h1 {
+      font-family: roboto;
+      color: #ffffff;
+      font-size: 70px;
+      font-weight: 600;
+      text-transform: uppercase; }
+    header .welcome_title h4 {
+      font-family: roboto;
+      color: #ffffff;
+      font-size: 25px;
+      font-weight: 300;
+      text-transform: uppercase; }
+
+.block_a {
+  height: 470px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white; }
+  .block_a .block_title {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; }
+    .block_a .block_title h3 {
+      padding-top: 60px;
+      font-family: Roboto;
+      color: #404040;
+      font-size: 35px;
+      font-weight: 300; }
+    .block_a .block_title p {
+      padding-top: 20px;
+      font-family: Roboto;
+      color: #404040;
+      font-size: 17px;
+      font-weight: 300; }
+  .block_a .block_content {
+    display: flex;
+    flex-direction: row;
+    max-width: 1024px;
+    padding: 90px 35px;
+    margin: 0 auto;
+    justify-content: space-between; }

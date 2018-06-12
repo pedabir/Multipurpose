@@ -12,6 +12,7 @@ header{
   background-position: center;
   background-size: cover;
   text-align: center;
+  position: relative;
   color: white;
   .header-menu{
     width: 100%;
@@ -53,7 +54,45 @@ header{
       }
     }
   }
-  h1{
-      vertical-align: bottom;
+  .welcome_title{
+    h1{
+      @include font-top();
+    }
+    h4{
+      @include font-title();
+    }
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    bottom: 150px;
+    text-align: center;
+    vertical-align: bottom;
+  }
+}
+.block_a{
+  height: 470px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  .block_title{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    h3{
+      padding-top: 60px;
+      @include font-title_black();
+    }
+    p{
+      padding-top: 20px;
+      @include font-titlesmall_black();
+    }
+  }
+  .block_content{
+    display: flex;
+    flex-direction: row;
+    max-width: 1024px;
+    padding: 90px 35px;
+    margin: 0 auto;
+    justify-content: space-between;
   }
 }
